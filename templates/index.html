@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket チャット</title>
+</head>
+<body>
+    <div id="chat"></div>
+    <input type="text" id="roomName" placeholder="ルーム名">
+    <input type="text" id="userName" placeholder="ユーザー名">
+    <button id="join_room_btn">入室</button>
+
+    <br>
+    <br>
+
+    <input type="text" id="message" placeholder="メッセージ">
+    <button id="send_ms_btn">送信</button>
+
+    <script src="{{ url_for('static', path='main.js') }}"></script>
+</body>
+</html>
